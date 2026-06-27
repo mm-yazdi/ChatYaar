@@ -236,7 +236,7 @@ MIT License
 
 
 🐙 https://github.com/mm-yazdi
-📨 Telegram: <a href="https:/t.me/mm_yazdi3">@mm_yazdi3</a>
+📨 Telegram: <a href="https://t.me/mm_yazdi3">@mm_yazdi3</a>
 
 ---
 
