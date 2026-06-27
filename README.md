@@ -20,8 +20,8 @@
 ![MAUI](https://img.shields.io/badge/.NET-MAUI-512BD4)
 ![AI](https://img.shields.io/badge/AI-Groq-orange)
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Windows%20%7C%20iOS%20%7C%20macOS-blue)
-![Language](https://img.shields.io/badge/Language-Persian-success)
-![License](https://img.shields.io/github/license/mm-yazdi/ChatYaar)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 
 </div>
 
