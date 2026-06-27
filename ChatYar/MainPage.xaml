@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:ChatYar.Models"
+             x:Class="ChatYar.MainPage"
+             Title=""
+             Padding="0"
+             BackgroundColor="{StaticResource Background}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="68" />
+        </Grid.RowDefinitions>
+
+        <!--Start Header-->
+        <Grid Grid.Row="0" 
+              BackgroundColor="{StaticResource Background}"
+              Padding="16,0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+
+            </Grid.ColumnDefinitions>
+
+            <!--Start new chat button-->
+            <Button Grid.Column="0" 
+                    Command="{Binding NewConversationCommand}"
+                    BackgroundColor="{StaticResource SurfaceRaised}"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="12"
+                    CornerRadius="12"
+                    Padding="10,6"
+                    HeightRequest="32"
+                    BorderColor="{StaticResource Border}"
+                    BorderWidth="1"
+                    HorizontalOptions="Start"
+                    Text="➕ شروع گفتگوی جدید" />
+            <!--End new chat button-->
+
+            <StackLayout Grid.Column="2" 
+                         Orientation="Horizontal"
+                         Spacing="12"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End">
+
+
+                <StackLayout Spacing="0"
+                             HorizontalOptions="End">
+                    <Label Text="چت یار دستیار هوشمند شما" 
+                           FlowDirection="RightToLeft"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource TextPrimary}"
+                           HorizontalOptions="End" />
+                    <Label Text="آنلاین" 
+                           FlowDirection="RightToLeft"
+                           FontSize="11"
+                           TextColor="{StaticResource Success}"
+                           HorizontalOptions="End" />
+                </StackLayout>
+
+                <!--Start bot icon-->
+                <Border StrokeThickness="0"
+                        WidthRequest="36" 
+                        HeightRequest="36">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="18" />
+                    </Border.StrokeShape>
+                    <Image Source="dotnet_bot.png" 
+                           Aspect="AspectFill" />
+                </Border>
+                <!--End bot icon-->
+            </StackLayout>
+        </Grid>
+
+        <!-- Start line header -->
+        <BoxView Grid.Row="0" 
+                 BackgroundColor="{StaticResource Border}"
+                 HeightRequest="1"
+                 VerticalOptions="End" />
+        <!--End line header-->
+        <!--End header-->
+
+        <!--Start Main-->
+        <Grid Grid.Row="1" 
+              BackgroundColor="{StaticResource Background}">
+
+            <!--Start Messages -->
+            <CollectionView x:Name="MessagesCollectionView" 
+                            ItemsSource="{Binding Messages}"
+                            VerticalOptions="Fill"
+                            Margin="16,8">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:ChatMessage">
+
+                        <Grid Margin="0,4">
+
+                            <!--Start user ask-->
+                            <Grid IsVisible="{Binding IsUser}"
+                                  HorizontalOptions="End">
+                                <Grid Margin="8,4,20,8">
+                                    <Border StrokeThickness="0"
+                                            Padding="14,12"
+                                            MaximumWidthRequest="300"
+                                            BackgroundColor="{StaticResource UserBubble}"
+                                            HorizontalOptions="End">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="18" />
+                                        </Border.StrokeShape>
+
+                                        <StackLayout Spacing="4">
+                                            <Label Text="{Binding Text}" 
+                                                   FlowDirection="RightToLeft"
+                                                   FontSize="14"
+                                                   TextColor="{StaticResource TextPrimary}" />
+                                            <Label Text="{Binding Timestamp, StringFormat='{0:HH:mm}'}" 
+                                                   FlowDirection="RightToLeft"
+                                                   FontSize="11"
+                                                   TextColor="{StaticResource TextSecondary}"
+                                                   HorizontalOptions="End" />
+                                        </StackLayout>
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                            <!--End user ask-->
+                            <!--Start answer bot-->
+                            <Grid IsVisible="{Binding IsUser, Converter={StaticResource InverseBoolConverter}}"
+                                  HorizontalOptions="Start">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0" Margin="8,8,8,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--Start bot icon -->
+                                    <Border Grid.Column="0" 
+                                            StrokeThickness="0"
+                                            WidthRequest="28" 
+                                            HeightRequest="28"
+                                            VerticalOptions="End"
+                                            Margin="0,0,8,0">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="14" />
+                                        </Border.StrokeShape>
+                                        <Image Source="dotnet_bot.png" 
+                                               Aspect="AspectFill" />
+                                    </Border>
+                                    <!--End bot icon-->
+                                    <!--Start bot message-->
+                                    <Border Grid.Column="1"
+                                            StrokeThickness="0"
+                                            Padding="14,12"
+                                            MaximumWidthRequest="300"
+                                            BackgroundColor="{StaticResource Surface}"
+                                            HorizontalOptions="Start">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="18" />
+                                        </Border.StrokeShape>
+
+                                        <StackLayout Spacing="4">
+                                            <Label Text="{Binding Text}" 
+                                                   FlowDirection="RightToLeft"
+                                                   FontSize="14"
+                                                   TextColor="{StaticResource TextPrimary}" />
+                                            <Label Text="{Binding Timestamp, StringFormat='{0:HH:mm}'}" 
+                                                   FlowDirection="RightToLeft"
+                                                   FontSize="11"
+                                                   TextColor="{StaticResource TextSecondary}"
+                                                   HorizontalOptions="End" />
+                                        </StackLayout>
+                                    </Border>
+                                    <!--End bot message-->
+                                </Grid>
+
+                                <!--Start bot buttons-->
+                                <StackLayout Grid.Row="1"
+                                             Orientation="Horizontal"
+                                             Spacing="8"
+                                             Margin="44,2,0,0">
+                                    <!--Start copy button-->
+                                    <Button Command="{Binding BindingContext.CopyMessageCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                            CommandParameter="{Binding .}"
+                                            BackgroundColor="Transparent"
+                                            Text=" کپی📋"
+                                            TextColor="{StaticResource TextSecondary}"
+                                            FontSize="14"
+                                            WidthRequest="50"
+                                            HeightRequest="28"
+                                            Padding="0"
+                                            CornerRadius="14" />
+                                    <!--End copy button-->
+                                    <!--Start dislike button-->
+                                    <Button Command="{Binding BindingContext.DislikeMessageCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                            CommandParameter="{Binding .}"
+                                            BackgroundColor="Transparent"
+                                            Text=" بهبود👎"
+                                            FontSize="14"
+                                            WidthRequest="50"
+                                            HeightRequest="28"
+                                            Padding="0"
+                                            CornerRadius="14">
+                                        <Button.Triggers>
+                                            <DataTrigger TargetType="Button" 
+                                                         Binding="{Binding IsDisliked}" 
+                                                         Value="True">
+                                                <Setter Property="TextColor" Value="{StaticResource DislikeActive}" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Button" 
+                                                         Binding="{Binding IsDisliked}" 
+                                                         Value="False">
+                                                <Setter Property="TextColor" Value="{StaticResource TextSecondary}" />
+                                            </DataTrigger>
+                                        </Button.Triggers>
+                                    </Button>
+                                    <!--End dislike button-->
+                                    <!--Start like button-->
+                                    <Button Command="{Binding BindingContext.LikeMessageCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                            CommandParameter="{Binding .}"
+                                            BackgroundColor="Transparent"
+                                            Text=" مفید 👍"
+                                            FontSize="14"
+                                            WidthRequest="50"
+                                            HeightRequest="28"
+                                            Padding="0"
+                                            CornerRadius="14">
+                                        <Button.Triggers>
+                                            <DataTrigger TargetType="Button" 
+                                                         Binding="{Binding IsLiked}" 
+                                                         Value="True">
+                                                <Setter Property="TextColor" Value="{StaticResource LikeActive}" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Button" 
+                                                         Binding="{Binding IsLiked}" 
+                                                         Value="False">
+                                                <Setter Property="TextColor" Value="{StaticResource TextSecondary}" />
+                                            </DataTrigger>
+                                        </Button.Triggers>
+                                    </Button>
+                                    <!--End like button-->
+                                </StackLayout>
+                                <!--End bot buttons-->
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <!--End bot answer-->
+            <!--Start welcome page-->
+            <Grid IsVisible="{Binding IsWelcomeVisible}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="1" 
+                             Spacing="16"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Padding="24">
+
+                    <Border StrokeThickness="0"
+                            WidthRequest="80" 
+                            HeightRequest="80">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="40" />
+                        </Border.StrokeShape>
+                        <Image Source="bot_avatar.png" 
+                               Aspect="AspectFill" />
+                    </Border>
+
+                    <Label Text="به چت یار خوش آمدید" 
+                           FlowDirection="RightToLeft"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource TextPrimary}"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="هر سوالی دارید بپرسید" 
+                           FlowDirection="RightToLeft"
+                           FontSize="14"
+                           TextColor="{StaticResource TextSecondary}"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Grid>
+            <!--End wellcome page-->
+            <!--Start is typing -->
+            <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                               IsVisible="{Binding IsBusy}"
+                               Color="{StaticResource Primary}"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Scale="1.5" />
+            <!--End is typing-->
+        </Grid>
+        <!--End main-->
+        <!--Start type is here-->
+        <Grid Grid.Row="2" 
+              BackgroundColor="{StaticResource Background}"
+              Padding="16,8">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!--Start shadow line -->
+            <Border Grid.ColumnSpan="2"
+                    BackgroundColor="Transparent"
+                    HeightRequest="32"
+                    VerticalOptions="Start">
+                <Border.Shadow>
+                    <Shadow Brush="{StaticResource ShadowColor}" 
+                            Offset="0,-8" 
+                            Radius="32" />
+                </Border.Shadow>
+            </Border>
+            <!--End shadow line-->
+            <!--Start User message-->
+            <Border Grid.Column="0"
+                    StrokeThickness="1"
+                    Stroke="{StaticResource Border}"
+                    BackgroundColor="{StaticResource SurfaceRaised}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Entry Placeholder="پیام خود را بنویسید..." 
+                       Text="{Binding UserInput}"
+                       FontSize="14"
+                       HeightRequest="44"
+                       BackgroundColor="Transparent"
+                       TextColor="{StaticResource TextPrimary}"
+                       PlaceholderColor="{StaticResource TextMuted}"
+                       Margin="12,0"
+                       FlowDirection="RightToLeft"
+                       ReturnType="Send"
+                       ReturnCommand="{Binding SendMessageCommand}"
+                       IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}" />
+            </Border>
+            <!--End user message-->
+            <!--Start send button-->
+            <Button Grid.Column="1" 
+                    Text="➤" 
+                    Command="{Binding SendMessageCommand}" 
+                    BackgroundColor="{StaticResource Primary}"
+                    TextColor="White"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    CornerRadius="10"
+                    Margin="8,0,0,0"
+                    FontSize="18"
+                    IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}" />
+            <!--End send button-->
+        </Grid>
+        <!--End type is here-->
+    </Grid>
+</ContentPage>

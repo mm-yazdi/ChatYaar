@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--Page style-->
+    <Style TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="{StaticResource Background}" />
+    </Style>
+
+    <!--Label style-->
+    <Style TargetType="Label">
+        <Setter Property="FontFamily" Value="VazirmatnRegular" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="BoldLabel">
+        <Setter Property="FontFamily" Value="VazirmatnBold" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+    </Style>
+
+    <!--Entry style-->
+    <Style TargetType="Entry">
+        <Setter Property="FontFamily" Value="VazirmatnRegular" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource TextMuted}" />
+    </Style>
+
+    <!--Button style -->
+    <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="VazirmatnRegular" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+    </Style>
+
+    <!--Border style-->
+    <Style TargetType="Border">
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+    </Style>
+
+    <!--Collection view style-->
+    <Style TargetType="CollectionView">
+        <Setter Property="VerticalOptions" Value="Fill" />
+    </Style>
+
+</ResourceDictionary>

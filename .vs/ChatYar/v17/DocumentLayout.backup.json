@@ -1,0 +1,242 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ChatYar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\ChatYar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\ChatYar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Aapt2.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Platforms\\Android\\AndroidManifest.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Platforms\\Android\\AndroidManifest.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\MainPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\MainPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Services\\GroqChatService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Services\\GroqChatService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Converters\\InverseBoolConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Converters\\InverseBoolConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\ViewModels\\MainPageViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\ViewModels\\MainPageViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Resources\\Styles\\Colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Resources\\Styles\\Colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Resources\\Styles\\Styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Resources\\Styles\\Styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Services\\IChatService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Services\\IChatService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ChatYar\\ChatYar\\Models\\ChatMessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChatYar\\Models\\ChatMessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Xamarin.Android.Aapt2.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Aapt2.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.78\\tools\\Xamarin.Android.Aapt2.targets",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAiwNUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-06-25T23:57:30.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "ChatYar\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "ChatYar\\Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-06-25T23:57:00.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\App.xaml",
+              "RelativeDocumentMoniker": "ChatYar\\App.xaml",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\App.xaml",
+              "RelativeToolTip": "ChatYar\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-25T23:44:03.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "ChatYar\\MainPage.xaml.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\MainPage.xaml.cs",
+              "RelativeToolTip": "ChatYar\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:37:53.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\MainPage.xaml",
+              "RelativeDocumentMoniker": "ChatYar\\MainPage.xaml",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\MainPage.xaml",
+              "RelativeToolTip": "ChatYar\\MainPage.xaml",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAmwEUBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-25T23:37:37.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GroqChatService.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Services\\GroqChatService.cs",
+              "RelativeDocumentMoniker": "ChatYar\\Services\\GroqChatService.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Services\\GroqChatService.cs",
+              "RelativeToolTip": "ChatYar\\Services\\GroqChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:36:40.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatYar.csproj",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\ChatYar.csproj",
+              "RelativeDocumentMoniker": "ChatYar\\ChatYar.csproj",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\ChatYar.csproj",
+              "RelativeToolTip": "ChatYar\\ChatYar.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-25T23:33:59.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "ChatYar\\MauiProgram.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\MauiProgram.cs",
+              "RelativeToolTip": "ChatYar\\MauiProgram.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:36:24.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InverseBoolConverter.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Converters\\InverseBoolConverter.cs",
+              "RelativeDocumentMoniker": "ChatYar\\Converters\\InverseBoolConverter.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Converters\\InverseBoolConverter.cs",
+              "RelativeToolTip": "ChatYar\\Converters\\InverseBoolConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:33:18.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainPageViewModel.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\ViewModels\\MainPageViewModel.cs",
+              "RelativeDocumentMoniker": "ChatYar\\ViewModels\\MainPageViewModel.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\ViewModels\\MainPageViewModel.cs",
+              "RelativeToolTip": "ChatYar\\ViewModels\\MainPageViewModel.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAIwI8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:45:58.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "ChatYar\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "ChatYar\\Resources\\Styles\\Colors.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-25T23:39:25.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "ChatYar\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "ChatYar\\Resources\\Styles\\Styles.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-25T23:39:42.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Services\\IChatService.cs",
+              "RelativeDocumentMoniker": "ChatYar\\Services\\IChatService.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Services\\IChatService.cs",
+              "RelativeToolTip": "ChatYar\\Services\\IChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:40:01.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "D:\\ChatYar\\ChatYar\\Models\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "ChatYar\\Models\\ChatMessage.cs",
+              "ToolTip": "D:\\ChatYar\\ChatYar\\Models\\ChatMessage.cs",
+              "RelativeToolTip": "ChatYar\\Models\\ChatMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T23:41:27.409Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
