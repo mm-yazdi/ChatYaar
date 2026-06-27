@@ -1,2 +1,216 @@
-# ChatYaar
-This is my first project with MAUI
+# 🤖 چت‌یار (ChatYar)
+
+<div align="center">
+
+<!-- 🔷 بنر پروژه -->
+
+<img src="docs/img/Gemini_Generated_Image_i61jevi61jevi61j.png" width="100%" />
+
+<br>
+
+### دستیار هوشمند فارسی مبتنی بر هوش مصنوعی
+
+سیستم چت چندسکویی • .NET MAUI • MVVM • SQLite • Groq AI
+
+<br>
+
+<!-- 🔷 Badge ها -->
+
+![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=.net)
+![MAUI](https://img.shields.io/badge/.NET-MAUI-512BD4)
+![AI](https://img.shields.io/badge/AI-Groq-orange)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Windows%20%7C%20iOS%20%7C%20macOS-blue)
+![Language](https://img.shields.io/badge/Language-Persian-success)
+![License](https://img.shields.io/github/license/mm-yazdi/ChatYaar)
+
+</div>
+
+---
+
+# 📖 معرفی پروژه
+
+**چت‌یار (ChatYar)** یک دستیار گفت‌وگوی هوشمند فارسی است که با استفاده از **.NET MAUI** توسعه داده شده و از API هوش مصنوعی **Groq** برای تولید پاسخ‌های هوشمند استفاده می‌کند.
+
+این پروژه با معماری **Clean Architecture + MVVM** طراحی شده و تمام مکالمات کاربر به‌صورت محلی با **SQLite** ذخیره می‌شوند.
+
+---
+
+# 🎥 دموی پروژه (GIF)
+
+<p align="center">
+  <img src="docs/gifs/demo.gif" width="800"/>
+</p>
+
+---
+
+# 📸 تصاویر برنامه
+
+## صفحه اصلی
+
+<img src="docs/images/welcome.png" width="800"/>
+
+## محیط چت
+
+<img src="docs/images/chat.png" width="800"/>
+
+## امکانات پیام (لایک / کپی / حذف)
+
+<img src="docs/images/actions.png" width="800"/>
+
+---
+
+# ✨ ویژگی‌ها
+
+* 🇮🇷 پشتیبانی کامل از زبان فارسی (RTL)
+* 🤖 پاسخ‌دهی هوشمند با Groq AI
+* 💬 ذخیره تاریخچه گفتگوها
+* 🗂 پایگاه داده SQLite
+* 👍 لایک / دیسلایک پیام‌ها
+* 📋 کپی سریع پیام‌ها
+* 🌙 رابط کاربری مدرن (Dark Mode)
+* ⚡ سرعت بالا و سبک
+* 📱 پشتیبانی Android
+* 💻 پشتیبانی Windows
+* 🍏 پشتیبانی macOS
+* 📲 پشتیبانی iOS
+
+---
+
+# 🏗 معماری پروژه
+
+```text
+UI (Views)
+   ↓
+ViewModel (MVVM)
+   ↓
+Services Layer
+   ↓
+SQLite / Groq API
+```
+
+---
+
+# 📂 ساختار پروژه
+
+```text
+ChatYar
+│
+├── Models
+├── ViewModels
+├── Views
+├── Services
+├── Resources
+├── Platforms
+├── Converters
+│
+├── App.xaml
+├── MauiProgram.cs
+└── ChatYar.csproj
+```
+
+---
+
+# 🚀 اجرای پروژه
+
+## 1. کلون کردن پروژه
+
+```bash
+git clone https://github.com/mm-yazdi/ChatYaar.git
+cd ChatYaar
+```
+
+## 2. نصب پکیج‌ها
+
+```bash
+dotnet restore
+```
+
+## 3. اجرای پروژه
+
+```bash
+dotnet build
+dotnet run
+```
+
+---
+
+# 🔑 تنظیم API Key
+
+در فایل زیر:
+
+```
+Services/GroqChatService.cs
+```
+
+مقدار زیر را جایگزین کنید:
+
+```csharp
+YOUR_GROQ_API_KEY
+```
+
+---
+
+# 📦 تکنولوژی‌ها
+
+* .NET MAUI
+* C#
+* XAML
+* MVVM Toolkit
+* SQLite
+* Groq API
+* Dependency Injection
+* GitHub Actions
+
+---
+
+# 📌 نقشه راه (Roadmap)
+
+* [ ] افزودن پیام صوتی 🎤
+* [ ] Streaming پاسخ‌ها ⚡
+* [ ] انتخاب مدل‌های مختلف AI
+* [ ] تم‌های قابل شخصی‌سازی
+* [ ] خروجی گرفتن از چت‌ها
+* [ ] Markdown Renderer
+
+---
+
+# 🤝 مشارکت
+
+اگر می‌خواهید مشارکت کنید:
+
+1. Fork کنید
+2. Branch بسازید
+
+```bash
+git checkout -b feature/NewFeature
+```
+
+3. تغییرات را Commit کنید
+4. Push کنید
+5. Pull Request ارسال کنید
+
+---
+
+# 📄 لایسنس
+
+MIT License
+
+---
+
+# 👨‍💻 توسعه‌دهنده
+
+**محمد مهدی یزدی**
+
+🌐 https://mmyazdi.ir
+🐙 https://github.com/mm-yazdi
+📨 Telegram: @mm_yazdi
+
+---
+
+<div align="center">
+
+## ⭐ اگر این پروژه را دوست داشتی Star بده
+
+ساخته شده با ❤️ و .NET MAUI
+
+</div>
