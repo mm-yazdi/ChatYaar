@@ -39,22 +39,33 @@
 # 📸 تصاویر برنامه
 
 ## صفحه اصلی
-
-<img src="docs/images/welcome.png" width="800"/>
+<p align="center">
+<img src="docs/img/mainpage.png" width="800"/>
+</p>
+<br>
 
 ## محیط چت
+<p align="center">
+<img src="docs/img/mohitchat.png" width="800"/>
+</p>
+<br>
 
-<img src="docs/images/chat.png" width="800"/>
 
-## امکانات پیام (لایک / کپی / حذف)
+## امکان ایجاد گفتگوی جدید
+<p align="center">
+<img src="docs/img/delete.png" width="800"/>
+</p>
+<br>
 
-<img src="docs/images/actions.png" width="800"/>
+<p align="center">
+<img src="docs/img/delete2.png" width="800"/>
+</p>
 
 ---
 
 # ✨ ویژگی‌ها
 
-* 🇮🇷 پشتیبانی کامل از زبان فارسی (RTL)
+
 * 🤖 پاسخ‌دهی هوشمند با Groq AI
 * 💬 ذخیره تاریخچه گفتگوها
 * 🗂 پایگاه داده SQLite
@@ -66,7 +77,7 @@
 * 💻 پشتیبانی Windows
 * 🍏 پشتیبانی macOS
 * 📲 پشتیبانی iOS
-
+*  پشتیبانی کامل از زبان فارسی (RTL)
 
 
 
@@ -223,15 +234,15 @@ MIT License
 
 **محمد مهدی یزدی**
 
-🌐 https://mmyazdi.ir
+
 🐙 https://github.com/mm-yazdi
-📨 Telegram: @mm_yazdi
+📨 Telegram: <a href="https:/t.me/mm_yazdi3">@mm_yazdi3</a>
 
 ---
 
 <div align="center">
 
-## ⭐ اگر این پروژه را دوست داشتی Star بده
+## ⭐ اگر این پروژه نظر شمارا جلب کرد ممنون میشوم star بدهید
 
 ساخته شده با ❤️ و .NET MAUI
 
