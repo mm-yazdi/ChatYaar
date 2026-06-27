@@ -10,7 +10,7 @@ public class GroqChatService : IChatService
 	// HTTP client for sending requests
 	private readonly HttpClient _httpClient;
 	// API key - get it from console.groq.com
-	private readonly string _apiKey = Environment.GetEnvironmentVariable("GROQ_API_KEY");
+	private readonly string _apiKey = "Enter your API key";
 	// API endpoint URL
 	private readonly string _apiUrl = "https://api.groq.com/openai/v1/chat/completions";
 
