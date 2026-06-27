@@ -35,13 +35,6 @@
 
 ---
 
-# 🎥 دموی پروژه (GIF)
-
-<p align="center">
-  <img src="docs/gifs/demo.gif" width="800"/>
-</p>
-
----
 
 # 📸 تصاویر برنامه
 
