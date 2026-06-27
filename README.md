@@ -74,42 +74,71 @@
 * 🍏 پشتیبانی macOS
 * 📲 پشتیبانی iOS
 
----
 
-# 🏗 معماری پروژه
 
-```text
-UI (Views)
-   ↓
-ViewModel (MVVM)
-   ↓
-Services Layer
-   ↓
-SQLite / Groq API
-```
 
 ---
 
 # 📂 ساختار پروژه
 
 ```text
-ChatYar
+ChatYar/
 │
-├── Models
-├── ViewModels
-├── Views
-├── Services
-├── Resources
-├── Platforms
-├── Converters
+├── 📂 Models/                         # لایه Core - مدل‌های داده
+│   └── ChatMessage.cs                 # مدل پیام (ID, Text, IsUser, Timestamp, IsLiked, IsDisliked)
 │
-├── App.xaml
-├── MauiProgram.cs
-└── ChatYar.csproj
+├── 📂 Services/                       # لایه Service - منطق کسب‌وکار
+│   ├── IChatService.cs                # اینترفیس سرویس چت
+│   ├── GroqChatService.cs             # ارتباط با Groq API
+│   └── LocalDbService.cs              # عملیات دیتابیس SQLite
+│
+├── 📂 ViewModels/                     # لایه ViewModel - منطق برنامه
+│   └── MainPageViewModel.cs           # مدیریت صفحه اصلی چت
+│
+├── 📂 Converters/                     # مبدل‌های XAML
+│   └── InverseBoolConverter.cs        # معکوس‌کننده Boolean
+│
+├── 📂 Resources/                      # منابع برنامه
+│   ├── Fonts/                         # فونت Vazirmatn
+│   ├── Images/                        # تصاویر برنامه
+│   └── Styles/                        # استایل‌های UI
+│
+├── 📂 Platforms/                      # کدهای مختص هر پلتفرم
+│   ├── Android/
+│   ├── iOS/
+│   ├── Windows/
+│   └── MacCatalyst/
+│
+├── 📄 App.xaml                        # نقطه ورودی برنامه
+├── 📄 MainPage.xaml                  # صفحه اصلی (XAML)
+├── 📄 MauiProgram.cs                  # تنظیمات و تزریق وابستگی
+└── 📄 ChatYar.csproj                  # فایل پروژه
 ```
 
 ---
-
+# 📊 دیاگرام معماری
+```mermaid
+graph TD
+    A[User Interaction] --> B[View - MainPage.xaml]
+    B --> C[ViewModel - MainPageViewModel]
+    C --> D[GroqChatService]
+    C --> E[LocalDbService]
+    D --> F[Groq API Cloud]
+    E --> G[SQLite Database]
+    C --> H[ChatMessage Model]
+    H --> E
+    G --> C
+    F --> D
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#ffb,stroke:#333,stroke-width:2px
+    style E fill:#ffb,stroke:#333,stroke-width:2px
+    style F fill:#fbb,stroke:#333,stroke-width:2px
+    style G fill:#fbb,stroke:#333,stroke-width:2px
+    style H fill:#ddd,stroke:#333,stroke-width:2px
+```
 # 🚀 اجرای پروژه
 
 ## 1. کلون کردن پروژه
