@@ -211,22 +211,22 @@ YOUR_GROQ_API_KEY
 
 اگر می‌خواهید مشارکت کنید:
 
-1. Fork کنید
-2. Branch بسازید
+1. در گام نخست Fork کنید
+2. سپس Branch بسازید
 
 ```bash
 git checkout -b feature/NewFeature
 ```
 
 3. تغییرات را Commit کنید
-4. Push کنید
-5. Pull Request ارسال کنید
+4. سپس Push کنید
+5. در آخر Pull Request ارسال کنید
 
 ---
 
 # 📄 لایسنس
 
-MIT License
+این پروژه تحت مجوز [MIT](https://github.com/mm-yazdi/ChatYaar/blob/main/LICENSE) منتشر شده است.
 
 ---
 
@@ -236,7 +236,7 @@ MIT License
 
 
 🐙 https://github.com/mm-yazdi
-📨 Telegram: <a href="https://t.me/mm_yazdi3">@mm_yazdi3</a>
+              📨 Telegram: <a href="https://t.me/mm_yazdi3">@mm_yazdi3</a>
 
 ---
 
